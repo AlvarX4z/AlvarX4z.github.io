@@ -2,8 +2,11 @@
 
 :root {
   --background-color: #fafafa;
+  --card-background-color: #ddd;
   --font-color: #4a4444;
-  --active-link-color: #000;
+  --active-menu-link-color: #000;
+  --active-link-color: #de394e;
+  --visited-link-color: #6c1000;
   --font-title: "Lato", sans-serif;
   --font-text: "Ubuntu", sans-serif;
 }
@@ -30,6 +33,10 @@
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .word-space {
   word-spacing: 0.1rem;
 }
@@ -40,7 +47,7 @@ html,
 body {
   background-color: var(--background-color, white);
   font-family: var(--font-text);
-  line-height: 1.6;
+  line-height: 1.8;
   width: 100%;
 }
 
@@ -88,7 +95,7 @@ nav {
 }
 
 .menu-link:active {
-  color: var(--active-link-color, black);
+  color: var(--active-menu-link-color, black);
 }
 
 .menu-link:hover {
@@ -120,7 +127,7 @@ main {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 #avatar {
@@ -143,10 +150,49 @@ main {
   margin: 1vh 0;
 }
 
+.link {
+  color: var(--active-link-color, red);
+}
+
+.link:active {
+  color: var(--active-link-color, red);
+}
+
+.link:visited {
+  color: var(--visited-link-color, purple);
+}
+
 hr {
   border-bottom: 0.1rem solid var(--font-color, black);
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 10vh;
+}
+
+#career > p {
+  margin-bottom: 5vh;
+}
+
+.career-card {
+  background-color: var(--card-background-color, gray);
+  border-radius: 1rem;
+  padding: 2vh 2vw;
+  margin-bottom: 5vh;
+}
+
+.card-company {
+  margin-bottom: 2vh;
+}
+
+.career-logo {
+  border-radius: 0.5rem;
+  width: 42px;
+  height: 42px;
+  margin: 0 3vw;
+}
+
+.card-details {
+  margin-bottom: 2vh;
 }
 
 /* Keyframes */
@@ -158,14 +204,14 @@ hr {
   }
   to {
     border-bottom: 0.1rem solid var(--font-color, black);
-    color: var(--active-link-color, black);
+    color: var(--active-menu-link-color, black);
   }
 }
 
 @keyframes menu-item-hover-out {
   from {
     border-bottom: 0.1rem solid var(--font-color, black);
-    color: var(--active-link-color, black);
+    color: var(--active-menu-link-color, black);
   }
   to {
     border-bottom: none;
