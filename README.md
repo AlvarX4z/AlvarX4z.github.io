@@ -8,4 +8,4 @@ You can find my LinkedIn profile [here](https://www.linkedin.com/in/alvarodefran
 
 | Date | Changes |
 |------|---------|
-| August 10th, 2023 | Creation of my GitHub Page. It's being developed by following the mobile-first design. Added Meta information and the Navigation Menu. |
+| August 10th, 2023 | Creation of my GitHub Page. It's being developed by following mobile-first design. Added Meta information, the Navigation menu and the About section. |

@@ -3,6 +3,7 @@
 :root {
   --background-color: #fafafa;
   --font-color: #4a4444;
+  --active-link-color: #000;
   --font-title: "Lato", sans-serif;
   --font-text: "Ubuntu", sans-serif;
 }
@@ -25,23 +26,34 @@
   text-transform: uppercase;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.word-space {
+  word-spacing: 0.1rem;
+}
+
 /* Website elements by order */
 
 html,
 body {
   background-color: var(--background-color, white);
   font-family: var(--font-text);
+  line-height: 1.6;
   width: 100%;
 }
 
 nav {
+  background-color: var(--background-color, white);
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 8vh;
+  height: 10vh;
+  z-index: 1;
 }
 
 #logo-name-cont {
@@ -75,7 +87,17 @@ nav {
   animation-duration: 0.1s;
 }
 
+.menu-link:active {
+  color: var(--active-link-color, black);
+}
+
 .menu-link:hover {
+  animation-name: menu-item-hover-in;
+  animation-fill-mode: forwards;
+  animation-duration: 0.1s;
+}
+
+.menu-link:focus {
   animation-name: menu-item-hover-in;
   animation-fill-mode: forwards;
   animation-duration: 0.1s;
@@ -86,22 +108,67 @@ nav {
   margin: 0 2vw;
 }
 
+main {
+  position: relative;
+  top: 15vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+#avatar {
+  border-radius: 2rem;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+#name {
+  font-size: 1.4rem;
+  margin-bottom: 2vh;
+}
+
+.about-text {
+  margin: 1vh 0;
+}
+
+hr {
+  border-bottom: 0.1rem solid var(--font-color, black);
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Keyframes */
 
 @keyframes menu-item-hover-in {
   from {
     border-bottom: none;
+    color: var(--font-color, black);
   }
   to {
     border-bottom: 0.1rem solid var(--font-color, black);
+    color: var(--active-link-color, black);
   }
 }
 
 @keyframes menu-item-hover-out {
   from {
     border-bottom: 0.1rem solid var(--font-color, black);
+    color: var(--active-link-color, black);
   }
   to {
     border-bottom: none;
+    color: var(--font-color, black);
   }
 }
