@@ -2,6 +2,6 @@
 
 My personal and professional website.
 
-## Changes' Chronology
+## Chronology
 
-- August 10th, 2023 - Testing how GitHub Pages works.
+- August 10th, 2023 - Initial commit for testing how GitHub Pages works.
