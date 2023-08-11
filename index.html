@@ -53,7 +53,7 @@
           alt="Full-body photo of Álvaro"
           id="avatar"
         />
-        <h1 class="text-center word-space" id="name">
+        <h1 class="text-center word-space lato" id="name">
           Álvaro de Francisco Sánchez
         </h1>
         <p class="about-text word-space">
@@ -103,7 +103,7 @@
               class="career-logo"
             />
             <a href="https://www.adevinta.com/" target="_blank" class="link">
-              <h2>Adevinta</h2>
+              <h2 class="lato">Adevinta</h2>
             </a>
           </div>
           <div class="card-details">
@@ -176,7 +176,7 @@
               class="career-logo"
             />
             <a href="https://www.ey.com/en_es" target="_blank" class="link">
-              <h2>Ernst & Young (EY)</h2>
+              <h2 class="lato">Ernst & Young (EY)</h2>
             </a>
           </div>
           <div class="card-details">
@@ -227,7 +227,7 @@
               target="_blank"
               class="link"
             >
-              <h2>Accenture</h2>
+              <h2 class="lato">Accenture</h2>
             </a>
           </div>
           <div class="card-details">
@@ -252,18 +252,140 @@
 
       <!-- SKILLS -->
       <section id="skills">
+        <p class="word-space">
+          In this section you can find all the information related to my CS / IT
+          skills, structured in tables. Please, take into account that the
+          column <span class="italics">Summary</span> has its info ordered
+          chronologically from newest to oldest piece of info.
+        </p>
 
+        <!-- PROGRAMMING LANGUAGES -->
+        <table>
+          <caption>
+            Programming Languages
+          </caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>
+                <abbr title="Years of Professional Experience">YOPE</abbr>
+              </th>
+              <th><abbr title="Years of Student Experience">YOSE</abbr></th>
+              <th>Versions</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>2+</td>
+              <td>2</td>
+              <td>17, 11, 8</td>
+              <td>
+                <p class="word-space">
+                  At Adevinta - Older microservices are written in Java 17. I
+                  participated also in migrating part of them from Java 11 to
+                  17. Sometimes I work with this programming language, but it
+                  isn't that common due to working mainly in Kotlin.
+                </p>
+                <p class="word-space">
+                  At EY - All the microservices (except for one written in
+                  Clojure) were using Java 8 and 11. It was my main programming
+                  language for working on a daily basis.
+                </p>
+                <p class="word-space">
+                  At Accenture - Used it applied to develope a native Android
+                  training app.
+                </p>
+                <p class="word-space">
+                  Studied Java during 2018-2020 as part of my education.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Kotlin</td>
+              <td>1+</td>
+              <td>1</td>
+              <td>Latest - 1.6.20</td>
+              <td>
+                <p class="word-space">
+                  At Adevinta - Modern microservices are using Kotlin, and I
+                  have to say that I like it a lot. My main programming language
+                  in a daily basis for working at this company and using it for
+                  BackEnd.
+                </p>
+                <p class="word-space">
+                  Studied Kotlin during 2019-2020 as part of my education, used
+                  mainly for Android apps.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>~4 months</td>
+              <td>1</td>
+              <td>9.0</td>
+              <td>
+                <p class="word-space">
+                  At Adevinta - There's a monolith based using C# (and some
+                  VisualBasic classes). Part of my job was following the fluxes
+                  within the monolith and understanding the part of the system
+                  which wasn't based in microservices. Also, I could assist
+                  colleagues by doing pair-programming when there were related
+                  developments with this language.
+                </p>
+                <p class="word-space">
+                  At EY - Part of the system was designed as a Data Feed pipe,
+                  written using C#, for feeding a MySQL database implemented in
+                  a Clojure-written microservice.
+                </p>
+                <p class="word-space">
+                  Studied C# during 2019-2020 as part of my education.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Clojure</td>
+              <td>~4 months</td>
+              <td>0</td>
+              <td>1.11.0 - 1.10.3</td>
+              <td>
+                At EY, one of the microservices was written in it and it was
+                quite a challenge to use and develop due to its total,
+                functional-programming paradigm.
+              </td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>~2 months</td>
+              <td>1</td>
+              <td>ECMAScript 2015</td>
+              <td>
+                <p class="word-space">
+                  At Accenture - Used it applied to Angular and React frameworks
+                  in developing a training app which used Ionic.
+                </p>
+                <p class="word-space">
+                  Studied JavaScript during 2018-2019 as part of my education.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>0</td>
+              <td>1</td>
+              <td>3.8.0</td>
+              <td>Studied Python during 2019-2020 as part of my education.</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <!-- LANGUAGES -->
-      <section id="languages">
-
-      </section>
+      <section id="languages"></section>
 
       <!-- CONTACT -->
-      <footer id="contact">
-
-      </footer>
+      <footer id="contact"></footer>
     </main>
   </body>
 </html>

@@ -33,6 +33,10 @@
   text-decoration: underline;
 }
 
+.italics {
+  font-style: italic;
+}
+
 .text-center {
   text-align: center;
 }
@@ -181,7 +185,7 @@ hr {
   background-color: var(--card-background-color, gray);
   border-radius: 1rem;
   padding: 2vh 2vw;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 .card-company {
@@ -213,6 +217,14 @@ hr {
 
 .card-features > li {
   margin: 2vh 0;
+}
+
+#skills > p {
+  margin-bottom: 5vh;
+}
+
+table {
+  overflow-x: scroll;
 }
 
 /* Keyframes */
