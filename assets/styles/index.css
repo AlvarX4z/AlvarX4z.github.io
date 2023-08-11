@@ -3,6 +3,8 @@
 :root {
   --background-color: #fafafa;
   --card-background-color: #ddd;
+  --cell-background-color: #ddd;
+  --hover-cell-background-color: #bbb;
   --font-color: #4a4444;
   --active-menu-link-color: #000;
   --active-link-color: #de394e;
@@ -35,6 +37,10 @@
 
 .italics {
   font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .text-center {
@@ -182,7 +188,7 @@ hr {
 }
 
 .career-card {
-  background-color: var(--card-background-color, gray);
+  background-color: var(--card-background-color, beige);
   border-radius: 1rem;
   padding: 2vh 2vw;
   margin-bottom: 10vh;
@@ -223,8 +229,49 @@ hr {
   margin-bottom: 5vh;
 }
 
-table {
-  overflow-x: scroll;
+.table-skills-container {
+  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table-skills {
+  border-collapse: collapse;
+}
+
+.table-skills > caption {
+  border: 0.1rem solid var(--font-color, gray);
+  padding: 2vh 2vw;
+}
+
+.table-skills > thead > tr,
+.table-skills > tbody > tr {
+  border-bottom: 0.1rem solid var(--font-color, gray);
+}
+
+.table-skills > thead > tr,
+.table-skills > tbody > tr:nth-child(even) {
+  background-color: var(--cell-background-color, beige);
+}
+
+.table-big-cell-padding {
+  padding: 2vh 2vw;
+}
+
+.table-big-cell {
+  width: 100vw;
+}
+
+td {
+  padding: 1vh 1vw;
+}
+
+td:hover {
+  background-color: var(--hover-cell-background-color, gray);
+}
+
+td > p {
+  margin: 1vh 0;
 }
 
 /* Keyframes */
