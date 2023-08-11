@@ -233,6 +233,7 @@ hr {
   overflow-x: auto;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 10vh;
 }
 
 .table-skills {
