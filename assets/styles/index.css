@@ -225,7 +225,7 @@ hr {
   margin: 2vh 0;
 }
 
-#skills > p {
+.paragraph-before-table {
   margin-bottom: 5vh;
 }
 
@@ -273,6 +273,10 @@ td:hover {
 
 td > p {
   margin: 1vh 0;
+}
+
+#languages > p:first-child {
+  margin-bottom: 2vh;
 }
 
 /* Keyframes */
