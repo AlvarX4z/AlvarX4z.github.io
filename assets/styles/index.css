@@ -29,6 +29,10 @@
   text-transform: uppercase;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .text-center {
   text-align: center;
 }
@@ -181,18 +185,34 @@ hr {
 }
 
 .card-company {
-  margin-bottom: 2vh;
+  margin: 2vh 0 3vh 0;
 }
 
 .career-logo {
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   width: 42px;
   height: 42px;
   margin: 0 3vw;
 }
 
 .card-details {
+  margin-bottom: 3vh;
+}
+
+.card-summary {
+  padding: 0 2vw;
+}
+
+.card-paragraph {
   margin-bottom: 2vh;
+}
+
+.card-features {
+  padding: 0 5vw;
+}
+
+.card-features > li {
+  margin: 2vh 0;
 }
 
 /* Keyframes */
