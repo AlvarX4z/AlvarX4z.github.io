@@ -5,6 +5,7 @@
   --card-background-color: #ddd;
   --cell-background-color: #ddd;
   --hover-cell-background-color: #bbb;
+  --caption-table-background-color: #f16d55;
   --font-color: #4a4444;
   --active-menu-link-color: #000;
   --active-link-color: #de394e;
@@ -53,6 +54,10 @@
 
 .word-space {
   word-spacing: 0.1rem;
+}
+
+.standard-margin {
+  margin-bottom: 10vh;
 }
 
 /* Website elements by order */
@@ -141,7 +146,6 @@ main {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin-bottom: 10vh;
 }
 
 #avatar {
@@ -180,18 +184,12 @@ hr {
   border-bottom: 0.1rem solid var(--font-color, black);
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 10vh;
-}
-
-#career > p {
-  margin-bottom: 5vh;
 }
 
 .career-card {
   background-color: var(--card-background-color, beige);
   border-radius: 1rem;
   padding: 2vh 2vw;
-  margin-bottom: 10vh;
 }
 
 .card-company {
@@ -225,10 +223,6 @@ hr {
   margin: 2vh 0;
 }
 
-.paragraph-before-table {
-  margin-bottom: 5vh;
-}
-
 .table-skills-container {
   overflow-x: auto;
   width: 100%;
@@ -241,6 +235,7 @@ hr {
 }
 
 .table-skills > caption {
+  background-color: var(--caption-table-background-color, coral);
   border: 0.1rem solid var(--font-color, gray);
   padding: 2vh 2vw;
 }
@@ -260,7 +255,7 @@ hr {
 }
 
 .table-big-cell {
-  width: 100vw;
+  width: 75vw;
 }
 
 td {
