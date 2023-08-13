@@ -56,8 +56,12 @@
   word-spacing: 0.1rem;
 }
 
-.standard-margin {
+.standard-height-margin {
   margin-bottom: 10vh;
+}
+
+.first-paragraph {
+  margin-bottom: 2vh;
 }
 
 /* Website elements by order */
@@ -270,8 +274,39 @@ td > p {
   margin: 1vh 0;
 }
 
-#languages > p:first-child {
-  margin-bottom: 2vh;
+#contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-container > a{
+  margin: 0 5vw;
+  margin-bottom: 10vh;
+}
+
+.button-contact {
+  background-color: var(--background-color, white);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1vh 2vw; 
+}
+
+.button-contact:hover {
+  animation-name: contact-button-hover-in;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+
+.button-contact > span:hover {
+  animation-name: contact-icon-hover-in;
+  animation-fill-mode: forwards;
+  animation-duration: 0.1s;
+} 
+
+.button-contact > span {
+  color: var(--font-color, black);
+  font-size: 3rem;
 }
 
 /* Keyframes */
@@ -287,13 +322,20 @@ td > p {
   }
 }
 
-@keyframes menu-item-hover-out {
+@keyframes contact-button-hover-in {
   from {
-    border-bottom: 0.1rem solid var(--font-color, black);
-    color: var(--active-menu-link-color, black);
+    background-color: var(--background-color, white);
   }
   to {
-    border-bottom: none;
-    color: var(--font-color, black);
+    background-color: var(--font-color, black);
+  }
+}
+
+@keyframes contact-icon-hover-in {
+  from {
+    color: var(--font-color, black)
+  }
+  to {
+    color: var(--background-color, white)
   }
 }
