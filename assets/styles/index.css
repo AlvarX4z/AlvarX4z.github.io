@@ -22,7 +22,7 @@
   padding: 0;
 }
 
-/* Classes */
+/* CLASSES */
 
 .lato {
   font-family: var(--font-title);
@@ -64,7 +64,7 @@
   margin-bottom: 2vh;
 }
 
-/* Website elements by order */
+/* WEBSITE ELEMENTS BY ORDER */
 
 html,
 body {
@@ -230,12 +230,13 @@ hr {
 .table-skills-container {
   overflow-x: auto;
   width: 100%;
-  margin: 0 auto;
   margin-bottom: 10vh;
 }
 
 .table-skills {
   border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .table-skills > caption {
@@ -277,9 +278,10 @@ td > p {
 #contact-container {
   display: flex;
   justify-content: center;
+  padding-bottom: 10vh;
 }
 
-#contact-container > a{
+#contact-container > a {
   margin: 0 5vw;
   margin-bottom: 10vh;
 }
@@ -289,7 +291,7 @@ td > p {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  padding: 1vh 2vw; 
+  padding: 1vh 2vw;
 }
 
 .button-contact:hover {
@@ -302,14 +304,14 @@ td > p {
   animation-name: contact-icon-hover-in;
   animation-fill-mode: forwards;
   animation-duration: 0.1s;
-} 
+}
 
 .button-contact > span {
   color: var(--font-color, black);
   font-size: 3rem;
 }
 
-/* Keyframes */
+/* KEYFRAMES */
 
 @keyframes menu-item-hover-in {
   from {
@@ -333,9 +335,58 @@ td > p {
 
 @keyframes contact-icon-hover-in {
   from {
-    color: var(--font-color, black)
+    color: var(--font-color, black);
   }
   to {
-    color: var(--background-color, white)
+    color: var(--background-color, white);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+  .table-big-cell {
+    width: 45vw;
+  }
+
+  #contact-container > a {
+    margin: 0 7vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .table-big-cell {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .table-big-cell {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  body {
+    text-align: center;
   }
 }
