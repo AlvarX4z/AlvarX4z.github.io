@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The personal website of Álvaro de Francisco Sánchez"
+      content="The contact page of Álvaro de Francisco Sánchez"
     />
     <meta
       name="keywords"
@@ -17,7 +17,7 @@
     <title>Álvaro de Francisco Sánchez | Backend Software Engineer</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <link type="text/css" rel="stylesheet" href="css/global.css" />
-    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link type="text/css" rel="stylesheet" href="css/contact.css" />
     <link
       type="text/css"
       rel="stylesheet"
@@ -30,7 +30,7 @@
     />
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="nav-wrapper">
         <ul>
           <li>
@@ -59,9 +59,9 @@
         <div class="user-view">
           <div class="background sidenav-background"></div>
           <a><img class="circle" src="assets/images/avatar.jpg" /></a>
-          <a
-            ><span class="white-text name">Álvaro de Francisco Sánchez</span></a
-          >
+          <a>
+            <span class="white-text name">Álvaro de Francisco Sánchez</span>
+          </a>
           <a><span class="white-text email">Backend Software Engineer</span></a>
         </div>
       </li>
@@ -73,7 +73,8 @@
       </li>
       <li>
         <a href="about.html" class="waves-effect">
-          <span class="material-symbols-outlined pink-text accent-3">person</span
+          <span class="material-symbols-outlined pink-text accent-3"
+            >person</span
           >About
         </a>
       </li>
@@ -97,34 +98,45 @@
       </li>
     </ul>
 
-    <footer id="contact">
-      <p class="word-space first-paragraph">
-        I'd like to thank you if you've reached this point of the website and
-        read all the information about me and my skillset.
-      </p>
-      <p class="word-space standard-height-margin">
-        Here you have all available options for contacting me!
-      </p>
-      <div id="contact-container">
-        <a href="mailto:alfrasan@gmail.com" target="_blank"
-          ><button class="button-contact">
-            <span class="material-symbols-outlined">mail</span>
-          </button></a
-        >
-        <a
-          href="https://www.linkedin.com/in/alvarodefranciscosanchez/"
-          target="_blank"
-          ><button class="button-contact">
-            <span class="material-symbols-outlined">work</span>
-          </button></a
-        >
-        <a href="https://github.com/AlvarX4z" target="_blank"
-          ><button class="button-contact">
-            <span class="material-symbols-outlined">code</span>
-          </button></a
-        >
-      </div>
-    </footer>
+    <div class="container">
+      <main id="main">
+        <div class="row">
+          <div class="col s12">
+            <p class="paragraph">
+              Thank you for browsing my website. I hope that you found my profile interesting with detailed information.
+            </p>
+            <p class="paragraph">
+              If you'd like to contact me, here you have all available options!
+            </p>
+          </div>
+          <div class="col s12 flex-vertical-center" id="contact-container">
+            <a
+              class="waves-effect waves-light btn-large pink accent-3"
+              href="mailto:alfrasan@gmail.com"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined v-center left">mail</span
+              >&nbsp;Email
+            </a>
+            <a
+              class="waves-effect waves-light btn-large pink accent-3"
+              href="https://www.linkedin.com/in/alvarodefranciscosanchez/"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined v-center left">work</span
+              >&nbsp;LinkedIn
+            </a>
+            <a
+              class="waves-effect waves-light btn-large pink accent-3"
+              href="https://github.com/AlvarX4z"
+              target="_blank"
+              ><span class="material-symbols-outlined v-center left">code</span
+              >&nbsp;GitHub
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
 
     <script src="js/materialize.js"></script>
     <script src="js/global.js"></script>

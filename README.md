@@ -15,3 +15,4 @@ You can find my LinkedIn profile [here](https://www.linkedin.com/in/alvarodefran
 | August 19th, 2023 | Started to think in V2. |
 | August 20th, 2023 | Decided to use [Materialize CSS](https://materializecss.github.io/materialize) as framework. |
 | August 21st, 2023 | Finished the Navbar and Sidenav. |
+| August 22nd, 2023 | Finished the Home page and the Contact for portrait smartphone. |
