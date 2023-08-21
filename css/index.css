@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  position: relative;
+  top: 16.5vh;
 }
 
 #who {
@@ -10,35 +12,47 @@
   margin-bottom: 5vh;
 }
 
-#name {
-  animation-name: who-color-out;
-  animation-duration: 0.1s;
+#avatar-container {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-#name:hover {
-  animation-name: who-color-in;
-  animation-fill-mode: forwards;
-  animation-duration: 0.1s;
+#avatar {
+  border-radius: 2rem;
 }
 
-.paragraph {
-  margin: 1vh 0;
-}
-
-@keyframes who-color-in {
-  from {
-    color: var(--font-color, black);
-  }
-  to {
-    color: var(--accent-color, magenta);
+@media only screen and (min-width: 601px) and (max-width: 720px) {
+  #main {
+    top: 18vh;
   }
 }
 
-@keyframes who-color-out {
-  from {
-    color: var(--accent-color, magenta);
+@media only screen and (min-width: 721px) and (max-width: 993px) {
+  #main {
+    top: 15vh;
   }
-  to {
-    color: var(--font-color, black);
+}
+
+@media only screen and (min-width: 994px) and (max-width: 1201px) {
+  #main {
+    top: 16vh;
+  }
+}
+
+@media only screen and (min-width: 1202px) and (max-width: 1449px) {
+  #main {
+    top: 17.5vh;
+  }
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1645px) {
+  #main {
+    top: 15.5vh;
+  }
+}
+
+@media only screen and (min-width: 1646px) and (max-width: 2000px) {
+  #main {
+    top: 13.5vh;
   }
 }

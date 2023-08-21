@@ -20,8 +20,16 @@
   font-family: var(--font-title);
 }
 
+.italics {
+  font-style: italic;
+}
+
 .v-center {
   vertical-align: middle;
+}
+
+.paragraph {
+  margin: 1.5vh;
 }
 
 *,

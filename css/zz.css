@@ -1,13 +1,7 @@
-.italics {
-  font-style: italic;
-}
+
 
 .bold {
   font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-left {
@@ -192,19 +186,6 @@ td > p {
 .button-contact > span {
   color: var(--font-color, black);
   font-size: 3rem;
-}
-
-/* KEYFRAMES */
-
-@keyframes menu-item-hover-in {
-  from {
-    border-bottom: none;
-    color: var(--font-color, black);
-  }
-  to {
-    border-bottom: 0.1rem solid var(--font-color, black);
-    color: var(--active-menu-link-color, black);
-  }
 }
 
 @keyframes contact-button-hover-in {

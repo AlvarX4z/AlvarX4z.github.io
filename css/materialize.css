@@ -3787,17 +3787,17 @@ html {
 }
 @media only screen and (min-width: 0) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 993px) {
   html {
-    font-size: 14.5px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 1201px) {
   html {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
