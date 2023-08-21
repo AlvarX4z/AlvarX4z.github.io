@@ -2,6 +2,10 @@
 
 :root {
   --background-color: #fafafa;
+  --accent-color: #f50057;
+  --font-title: "Lato", sans-serif;
+  --font-text: "Ubuntu", sans-serif;
+
   --card-background-color: #ddd;
   --cell-background-color: #ddd;
   --hover-cell-background-color: #bbb;
@@ -10,8 +14,14 @@
   --active-menu-link-color: #000;
   --active-link-color: #de394e;
   --visited-link-color: #6c1000;
-  --font-title: "Lato", sans-serif;
-  --font-text: "Ubuntu", sans-serif;
+}
+
+.lato {
+  font-family: var(--font-title);
+}
+
+.v-center {
+  vertical-align: middle;
 }
 
 *,
@@ -26,8 +36,10 @@ html,
 body {
   background-color: var(--background-color, white);
   font-family: var(--font-text);
-  line-height: 1.8;
+  word-spacing: 0.1rem;
+  line-height: 2;
   width: 100%;
+  height: 100%;
 }
 
 nav {
@@ -38,50 +50,6 @@ nav {
 
 #logo {
   font-size: 1.2rem;
-}
-
-.lato {
-  font-family: var(--font-title);
-}
-
-.italics {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.v-center {
-  vertical-align: middle;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.word-space {
-  word-spacing: 0.1rem;
-}
-
-.standard-height-margin {
-  margin-bottom: 10vh;
-}
-
-.first-paragraph {
-  margin-bottom: 2vh;
 }
 
 .sidenav-background {
