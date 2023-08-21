@@ -11,9 +11,6 @@
   --hover-cell-background-color: #bbb;
   --caption-table-background-color: #f16d55;
   --font-color: #4a4444;
-  --active-menu-link-color: #000;
-  --active-link-color: #de394e;
-  --visited-link-color: #6c1000;
 }
 
 .lato {
@@ -59,7 +56,7 @@ body {
   width: 100%;
 }
 
-#navbar{
+#navbar {
   display: block;
   position: fixed;
   top: 0;
