@@ -1,10 +1,8 @@
 #main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-  top: 16.5vh;
+  height: 80vh;
+  margin-top: 15vh;
 }
 
 #who {
@@ -21,38 +19,8 @@
   border-radius: 2rem;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 720px) {
+@media only screen and (min-width: 1481px) {
   #main {
-    top: 18vh;
-  }
-}
-
-@media only screen and (min-width: 721px) and (max-width: 993px) {
-  #main {
-    top: 15vh;
-  }
-}
-
-@media only screen and (min-width: 994px) and (max-width: 1201px) {
-  #main {
-    top: 16vh;
-  }
-}
-
-@media only screen and (min-width: 1202px) and (max-width: 1449px) {
-  #main {
-    top: 17.5vh;
-  }
-}
-
-@media only screen and (min-width: 1450px) and (max-width: 1645px) {
-  #main {
-    top: 15.5vh;
-  }
-}
-
-@media only screen and (min-width: 1646px) and (max-width: 2000px) {
-  #main {
-    top: 13.5vh;
+    margin-top: 15vh;
   }
 }

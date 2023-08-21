@@ -28,8 +28,18 @@
   vertical-align: middle;
 }
 
+.flex-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .paragraph {
-  margin: 1.5vh;
+  margin-top: 2vh;
+}
+
+.pad-left {
+  padding-left: 2vw;
 }
 
 *,
@@ -47,10 +57,10 @@ body {
   word-spacing: 0.1rem;
   line-height: 2;
   width: 100%;
-  height: 100%;
 }
 
-nav {
+#navbar{
+  display: block;
   position: fixed;
   top: 0;
   z-index: 1;

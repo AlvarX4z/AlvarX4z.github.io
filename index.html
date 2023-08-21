@@ -31,7 +31,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="nav-wrapper">
         <ul>
           <li>
@@ -105,7 +105,12 @@
           <div class="col s12">
             <h1 class="center-align" id="who">Who am I?</h1>
           </div>
-          <div class="col s12" id="avatar-container">
+        </div>
+        <div class="row">
+          <div
+            class="col s12 m12 l5 xl5 v-center flex-vertical-center"
+            id="avatar-container"
+          >
             <img
               src="assets/images/avatar.jpg"
               class="responsive-img"
@@ -113,16 +118,14 @@
               id="avatar"
             />
           </div>
-          <div class="col s12">
-            <p class="paragraph">
+          <div class="col s12 m12 l7 xl7 flex-vertical-center">
+            <p class="paragraph pad-left">
               Hello there! I'm Álvaro and am a Backend Software Engineer with
               more than 2 years of experience delivering top-notch quality
               software in big-sized companies, always having new opportunities
               for improving and learning about new technologies.
             </p>
-          </div>
-          <div class="col s12">
-            <p class="paragraph">
+            <p class="paragraph pad-left">
               Currently I work remotely at
               <a
                 href="https://www.adevinta.com/"
@@ -133,12 +136,12 @@
               and my current job's tech stack is Kotlin with Spring Boot and
               SQL, among other technologies and tools.
             </p>
-          </div>
-          <div class="col s12">
-            <p class="paragraph">
+            <p class="paragraph pad-left">
               Welcome to my personal website! You can know more
               <a href="about.html" class="pink-text accent-3">about me</a> by
-              browsing it, and if you'd like to contact me, please, feel free!
+              browsing it, and if you'd like to
+              <a href="contact.html" class="pink-text accent-3">contact me</a>,
+              please, feel free!
             </p>
           </div>
         </div>
