@@ -10,6 +10,35 @@
   margin-bottom: 5vh;
 }
 
+#name {
+  animation-name: who-color-out;
+  animation-duration: 0.1s;
+}
+
+#name:hover {
+  animation-name: who-color-in;
+  animation-fill-mode: forwards;
+  animation-duration: 0.1s;
+}
+
 .paragraph {
   margin: 1vh 0;
+}
+
+@keyframes who-color-in {
+  from {
+    color: var(--font-color, black);
+  }
+  to {
+    color: var(--accent-color, magenta);
+  }
+}
+
+@keyframes who-color-out {
+  from {
+    color: var(--accent-color, magenta);
+  }
+  to {
+    color: var(--font-color, black);
+  }
 }
