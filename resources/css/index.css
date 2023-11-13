@@ -3,3 +3,7 @@ h1 {
   margin: 10vh 0;
   text-align: center;
 }
+
+p:last-of-type {
+  margin-bottom: 10vh;
+}

@@ -3,7 +3,11 @@
 :root {
   font-size: 16px;
   --background-color: #ffffff;
+  --border-color: #404040;
   --font-color: #404040;
+  --card-title-background-color: #404040;
+  --card-title-color: #ffffff;
+  --card-basic-info-background-color: #cfcfcf;
   --title-color: #171718;
   --active-nav-link-color: #171718;
   --not-focused-nav-link-color: #737373;
@@ -25,7 +29,7 @@ body {
 }
 
 nav {
-  border-bottom: 2px solid var(--font-color, dimgray);
+  border-bottom: 2px solid var(--border-color, dimgray);
 }
 
 nav > ul {
@@ -58,12 +62,8 @@ p {
   margin: 3vh 0;
 }
 
-p:last-of-type {
-  margin-bottom: 10vh;
-}
-
 footer {
-  border-top: 2px solid var(--font-color, dimgray);
+  border-top: 2px solid var(--border-color, dimgray);
 }
 
 footer > ul {
