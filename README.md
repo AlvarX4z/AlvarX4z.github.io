@@ -17,3 +17,4 @@ You can find my LinkedIn profile [here](https://www.linkedin.com/in/alvarodefran
 | August 21st, 2023 | Finished the Navbar and Sidenav. |
 | August 22nd, 2023 | Finished the Home page and the Contact for portrait smartphone. |
 | November 10th, 2023 | Back to the project. Decided to change the model and style. Dropped [Materialize CSS](https://materializecss.github.io/materialize) and plain HTML + CSS + JavaScript will be used. |
+| November 13th, 2023 | Finished the Home section. |

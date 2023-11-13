@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  --background-color: #ffffff;
+  --font-color: #404040;
+  --title-color: #171718;
+  --active-nav-link-color: #171718;
+  --not-focused-nav-link-color: #737373;
+  --font: "Ubuntu", system-ui, sans-serif;
+}
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color, white);
+  font-family: var(--font);
+}
+
+nav {
+  border-bottom: 2px solid var(--font-color, dimgray);
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5% 5%;
+}
+
+nav > ul > li {
+  font-weight: 400;
+  padding: 2% 5%;
+}
+
+nav > ul > li > a:hover {
+  color: var(--active-nav-link-color, black);
+  font-weight: 600;
+}
+
+main {
+  line-height: 1.75rem;
+}
+
+a {
+  color: #cc0153;
+  text-decoration: none;
+}
+
+p {
+  color: var(--font-color, dimgray);
+  font-weight: 400;
+  margin: 3vh 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-current-page {
+  color: var(--active-nav-link-color, black);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--not-focused-nav-link-color, gray);
+  text-decoration: none;
+}
+
+.no-decoration {
+  list-style-type: none;
+}
