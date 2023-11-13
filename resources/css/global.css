@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 :root {
+  font-size: 16px;
   --background-color: #ffffff;
   --font-color: #404040;
   --title-color: #171718;
   --active-nav-link-color: #171718;
   --not-focused-nav-link-color: #737373;
+  --link-color: #da3450;
   --font: "Ubuntu", system-ui, sans-serif;
 }
 
@@ -19,6 +21,7 @@ html {
 body {
   background-color: var(--background-color, white);
   font-family: var(--font);
+  height: 100vh;
 }
 
 nav {
@@ -27,27 +30,25 @@ nav {
 
 nav > ul {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 5% 5%;
+  justify-content: space-between;
+  padding: 2vh 2vh;
 }
 
 nav > ul > li {
   font-weight: 400;
-  padding: 2% 5%;
+  padding: 2vh 2vw;
 }
 
 nav > ul > li > a:hover {
   color: var(--active-nav-link-color, black);
-  font-weight: 600;
 }
 
 main {
-  line-height: 1.75rem;
+  line-height: 1.85rem;
 }
 
 a {
-  color: #cc0153;
+  color: var(--link-color, magenta);
   text-decoration: none;
 }
 
@@ -55,6 +56,30 @@ p {
   color: var(--font-color, dimgray);
   font-weight: 400;
   margin: 3vh 0;
+}
+
+p:last-of-type {
+  margin-bottom: 10vh;
+}
+
+footer {
+  border-top: 2px solid var(--font-color, dimgray);
+}
+
+footer > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 2vh;
+}
+
+footer > ul > li > a {
+  display: flex;
+  font-weight: 400;
+  padding: 2vh 2vw;
+}
+
+footer > ul > li > a:hover {
+  color: var(--active-nav-link-color, black);
 }
 
 .container {
@@ -73,6 +98,65 @@ p {
   text-decoration: none;
 }
 
+.footer-link {
+  color: var(--not-focused-nav-link-color, black);
+  text-decoration: none;
+}
+
 .no-decoration {
   list-style-type: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    font-size: 17px;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 35%;
+  }
 }
