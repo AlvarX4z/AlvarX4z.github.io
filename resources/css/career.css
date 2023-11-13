@@ -1,5 +1,3 @@
-
-
 .card {
   border: 2px solid var(--border-color, dimgray);
   border-radius: 5px;
@@ -10,16 +8,13 @@
 .card-title {
   border-bottom: 2px solid var(--border-color, dimgray);
   background-color: var(--card-title-background-color, dimgray);
-  padding: 1vh 0;
-}
-
-.card-title-text {
-  font-size: 1.5rem;
+  padding: 2vh 0;
   text-align: center;
 }
 
-.title-link {
+.card-title-link {
   color: var(--card-title-color, white);
+  font-size: 1.5rem;
 }
 
 .title-link:hover {
