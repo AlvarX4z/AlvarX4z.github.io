@@ -3,6 +3,7 @@
   border-radius: 5px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 10vh;
 }
 
 .card-title {
@@ -34,4 +35,9 @@
 
 .card-info-details > * {
   padding: 0 3vw;
+}
+
+.card-info-details > ul {
+  padding-left: 5vw;
+  margin-bottom: 3vh;
 }
