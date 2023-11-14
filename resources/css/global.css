@@ -151,12 +151,12 @@ footer > ul > li > a:hover {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 55%;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .container {
-    width: 35%;
+    width: 40%;
   }
 }
