@@ -8,6 +8,7 @@ You can find my LinkedIn profile [here](https://www.linkedin.com/in/alvarodefran
 
 | Date | Changes |
 |------|---------|
+| 2023-11-21 | Finished the About section. |
 | 2023-11-20 | Working on the About section. |
 | 2023-11-14 | Improved info and styles in the Career section. |
 | 2023-11-13 | Finished the Home and Career sections. |

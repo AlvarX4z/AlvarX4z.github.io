@@ -1,0 +1,55 @@
+img {
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5vh;
+  width: 90%;
+}
+
+figcaption {
+  color: var(--font-color, dimgray);
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 480px) {
+  img {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  img {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  img {
+    width: 55%;
+  }
+}
