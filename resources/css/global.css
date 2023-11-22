@@ -115,6 +115,21 @@ footer > ul > li > a:hover {
   font-style: italic;
 }
 
+.card {
+  border: 2px solid var(--border-color, dimgray);
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+}
+
+.card-title {
+  border-bottom: 2px solid var(--border-color, dimgray);
+  background-color: var(--card-title-background-color, dimgray);
+  padding: 2vh 0;
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 85%;
