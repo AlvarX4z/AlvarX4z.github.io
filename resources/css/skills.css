@@ -18,3 +18,7 @@ ol {
   font-size: 5rem;
   margin: 2vh 2vw;
 }
+
+iconify-icon {
+  color: var(--title-color, black);
+}
